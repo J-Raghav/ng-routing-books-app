@@ -1,0 +1,20 @@
+<html ng-app="booksAndAuthors">
+<head>
+    <title>Books and Authors</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-controller="homeCtrl">
+    <nav>
+        <a href="#/">Home</a>
+        <a href="#/books">Books</a>
+        <a href="#/authors">Authors</a>
+        <a href="#/contact">Contact</a>
+    </nav>
+    <div ng-view>
+
+    </div>
+</body>
+</html>
