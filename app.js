@@ -22,7 +22,7 @@ function($routeProvider) {
             controller: 'booksCtrl'
         }).
         when('/popular-books', {
-            template: 'popular-books.html',
+            templateUrl: 'popular-books.html',
             controller: 'popularBooksCtrl'
         }).
         when('/authors', {
@@ -78,8 +78,8 @@ app.controller('contactCtrl', function($scope){
 });
 
 app.controller('popularBooksCtrl', function($scope){
-    $scope.title =  'Authors';
-    $scope.message = 'These is Authors page';
+    $scope.title =  'Popular Books';
+    $scope.message = 'These are the Trending books';
     $scope.books = books;
 });
 
